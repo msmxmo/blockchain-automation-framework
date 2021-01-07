@@ -6892,3 +6892,599 @@ Using module file /usr/local/lib/python3.5/dist-packages/ansible/modules/command
 <localhost> PUT /root/.ansible/tmp/ansible-local-3312pfbd6eab/tmpm_9lev35 TO /root/.ansible/tmp/ansible-tmp-1610032587.37238-5023-122480706005023/AnsiballZ_command.py
 <localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610032587.37238-5023-122480706005023/ /root/.ansible/tmp/ansible-tmp-1610032587.37238-5023-122480706005023/AnsiballZ_command.py && sleep 0'
 <localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610032587.37238-5023-122480706005023/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1610032587.37238-5023-122480706005023/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true,
+    "cmd": "cd \"/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email mary.shalom.l.maximo@accenture.com\ngit config user.name msmxmo\ngit --git-dir=/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/r3-corda/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../..//.git reset \"platforms/r3-corda/configuration\"\nfi  \n\ngit --git-dir=/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../..//.git commit -s -m \"[ci skip] Pushing deployment files for namespace and service accounts\" || true\ngit --git-dir=/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../..//.git push https://msmxmo:Hushhush0205@github.com/msmxmo/blockchain-automation-framework.git HEAD:local\n",
+    "delta": "0:00:23.687589",
+    "end": "2021-01-07 15:16:51.444989",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "cd \"/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../\"\necho \"---------------SHOW CONTENT OF DIR---------------\"\nls -a\necho \"---------------GIT PUSH---------------\"\ngit config user.email mary.shalom.l.maximo@accenture.com\ngit config user.name msmxmo\ngit --git-dir=/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../..//.git add -A .\n\n# To ignore a directory add it add reset path\nreset_path=platforms/r3-corda/configuration\nif [ -n \"$reset_path\" ]; then\n    git --git-dir=/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../..//.git reset \"platforms/r3-corda/configuration\"\nfi  \n\ngit --git-dir=/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../..//.git commit -s -m \"[ci skip] Pushing deployment files for namespace and service accounts\" || true\ngit --git-dir=/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../..//.git push https://msmxmo:Hushhush0205@github.com/msmxmo/blockchain-automation-framework.git HEAD:local\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "rc": 0,
+    "start": "2021-01-07 15:16:27.757400",
+    "stderr": "To https://msmxmo:Hushhush0205@github.com/msmxmo/blockchain-automation-framework.git\n   56f80a0..a621b27  HEAD -> local",
+    "stderr_lines": [
+        "To https://msmxmo:Hushhush0205@github.com/msmxmo/blockchain-automation-framework.git",
+        "   56f80a0..a621b27  HEAD -> local"
+    ],
+    "stdout": "---------------SHOW CONTENT OF DIR---------------\n.\n..\n.circleci\n.git\n.github\n.gitignore\nCODEOWNERS\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nDockerfile\nLICENSE\nMAINTAINERS.md\nREADME.md\n_travis.yml\nautomation\nbuild\ndocs\nexamples\nout\nplatforms\nrelease-notes.md\nreset.sh\nrun.sh\n---------------GIT PUSH---------------\nUnstaged changes after reset:\nM\tplatforms/r3-corda/configuration/roles/create/k8_component/vars/main.yaml\n[local a621b27] [ci skip] Pushing deployment files for namespace and service accounts\n 1 file changed, 610 insertions(+)",
+    "stdout_lines": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "_travis.yml",
+        "automation",
+        "build",
+        "docs",
+        "examples",
+        "out",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "Unstaged changes after reset:",
+        "M\tplatforms/r3-corda/configuration/roles/create/k8_component/vars/main.yaml",
+        "[local a621b27] [ci skip] Pushing deployment files for namespace and service accounts",
+        " 1 file changed, 610 insertions(+)"
+    ]
+}
+
+TASK [/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../shared/configuration/roles/git_push : Output for gitpush] ***
+task path: /home/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:32
+ok: [localhost] => {
+    "msg": [
+        "---------------SHOW CONTENT OF DIR---------------",
+        ".",
+        "..",
+        ".circleci",
+        ".git",
+        ".github",
+        ".gitignore",
+        "CODEOWNERS",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "Dockerfile",
+        "LICENSE",
+        "MAINTAINERS.md",
+        "README.md",
+        "_travis.yml",
+        "automation",
+        "build",
+        "docs",
+        "examples",
+        "out",
+        "platforms",
+        "release-notes.md",
+        "reset.sh",
+        "run.sh",
+        "---------------GIT PUSH---------------",
+        "Unstaged changes after reset:",
+        "M\tplatforms/r3-corda/configuration/roles/create/k8_component/vars/main.yaml",
+        "[local a621b27] [ci skip] Pushing deployment files for namespace and service accounts",
+        " 1 file changed, 610 insertions(+)"
+    ]
+}
+
+TASK [/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../shared/configuration/roles/git_push : Error for git_push] ***
+task path: /home/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:37
+ok: [localhost] => {
+    "msg": [
+        "To https://msmxmo:Hushhush0205@github.com/msmxmo/blockchain-automation-framework.git",
+        "   56f80a0..a621b27  HEAD -> local"
+    ]
+}
+
+TASK [Check if namespace exists] ***********************************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/namespace_serviceaccount/tasks/main.yaml:3
+
+TASK [/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../shared/configuration/roles/check/k8_component : Check Namespace manufacturer-ns is created] ***
+task path: /home/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:7
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1610032612.1107414-5071-74888682261073 `" && echo ansible-tmp-1610032612.1107414-5071-74888682261073="` echo /root/.ansible/tmp/ansible-tmp-1610032612.1107414-5071-74888682261073 `" ) && sleep 0'
+redirecting (type: modules) ansible.builtin.k8s_info to community.kubernetes.k8s_info
+Using module file /usr/local/lib/python3.5/dist-packages/ansible_collections/community/kubernetes/plugins/modules/k8s_info.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-3312pfbd6eab/tmpz4fqz5_r TO /root/.ansible/tmp/ansible-tmp-1610032612.1107414-5071-74888682261073/AnsiballZ_k8s_info.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610032612.1107414-5071-74888682261073/ /root/.ansible/tmp/ansible-tmp-1610032612.1107414-5071-74888682261073/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610032612.1107414-5071-74888682261073/AnsiballZ_k8s_info.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1610032612.1107414-5071-74888682261073/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "api_key": null,
+            "api_version": "v1",
+            "ca_cert": null,
+            "client_cert": null,
+            "client_key": null,
+            "context": "minikube",
+            "field_selectors": [],
+            "host": null,
+            "kind": "Namespace",
+            "kubeconfig": "/home/blockchain-automation-framework/build/config",
+            "label_selectors": [],
+            "name": "manufacturer-ns",
+            "namespace": null,
+            "password": null,
+            "persist_config": null,
+            "proxy": null,
+            "username": null,
+            "validate_certs": null,
+            "wait": false,
+            "wait_condition": null,
+            "wait_sleep": 5,
+            "wait_timeout": 120
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "v1",
+            "kind": "Namespace",
+            "metadata": {
+                "annotations": {
+                    "fluxcd.io/sync-checksum": "a5dddd96b7223be3ca1941e7324d6f1d957ccac2",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"a5dddd96b7223be3ca1941e7324d6f1d957ccac2\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.6HdYtp0dbkHrG54-8nxHGKwASm3oEUxoRlVHAwJCS5c\"},\"name\":\"manufacturer-ns\"}}\n"
+                },
+                "creationTimestamp": "2021-01-06T14:32:55Z",
+                "labels": {
+                    "fluxcd.io/sync-gc-mark": "sha256.6HdYtp0dbkHrG54-8nxHGKwASm3oEUxoRlVHAwJCS5c"
+                },
+                "name": "manufacturer-ns",
+                "resourceVersion": "6744",
+                "selfLink": "/api/v1/namespaces/manufacturer-ns",
+                "uid": "215dbb20-264c-46e9-b21b-25714f516c04"
+            },
+            "spec": {
+                "finalizers": [
+                    "kubernetes"
+                ]
+            },
+            "status": {
+                "phase": "Active"
+            }
+        }
+    ]
+}
+
+TASK [/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace manufacturer-ns] ***
+task path: /home/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:17
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace manufacturer-ns] ***
+task path: /home/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:32
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../shared/configuration/roles/check/k8_component : Wait for Namespace manufacturer-ns] ***
+task path: /home/blockchain-automation-framework/platforms/shared/configuration/roles/check/k8_component/tasks/main.yaml:45
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [create/namespace_serviceaccount : Set the result of namespace check to a local variable] ***
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/namespace_serviceaccount/tasks/main.yaml:12
+ok: [localhost] => {
+    "ansible_facts": {
+        "get_namespace": {
+            "changed": false,
+            "failed": false,
+            "resources": [
+                {
+                    "apiVersion": "v1",
+                    "kind": "Namespace",
+                    "metadata": {
+                        "annotations": {
+                            "fluxcd.io/sync-checksum": "a5dddd96b7223be3ca1941e7324d6f1d957ccac2",
+                            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"a5dddd96b7223be3ca1941e7324d6f1d957ccac2\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.6HdYtp0dbkHrG54-8nxHGKwASm3oEUxoRlVHAwJCS5c\"},\"name\":\"manufacturer-ns\"}}\n"
+                        },
+                        "creationTimestamp": "2021-01-06T14:32:55Z",
+                        "labels": {
+                            "fluxcd.io/sync-gc-mark": "sha256.6HdYtp0dbkHrG54-8nxHGKwASm3oEUxoRlVHAwJCS5c"
+                        },
+                        "name": "manufacturer-ns",
+                        "resourceVersion": "6744",
+                        "selfLink": "/api/v1/namespaces/manufacturer-ns",
+                        "uid": "215dbb20-264c-46e9-b21b-25714f516c04"
+                    },
+                    "spec": {
+                        "finalizers": [
+                            "kubernetes"
+                        ]
+                    },
+                    "status": {
+                        "phase": "Active"
+                    }
+                }
+            ]
+        }
+    },
+    "changed": false
+}
+
+TASK [Create namespace for manufacturer] ***************************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/namespace_serviceaccount/tasks/main.yaml:17
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Create vault auth service account for manufacturer] **********************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/namespace_serviceaccount/tasks/main.yaml:28
+
+TASK [create/k8_component : stat] **********************************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:11
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1610032614.8765898-5111-15777765163689 `" && echo ansible-tmp-1610032614.8765898-5111-15777765163689="` echo /root/.ansible/tmp/ansible-tmp-1610032614.8765898-5111-15777765163689 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.5/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-3312pfbd6eab/tmpvt38u73v TO /root/.ansible/tmp/ansible-tmp-1610032614.8765898-5111-15777765163689/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610032614.8765898-5111-15777765163689/ /root/.ansible/tmp/ansible-tmp-1610032614.8765898-5111-15777765163689/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610032614.8765898-5111-15777765163689/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1610032614.8765898-5111-15777765163689/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns/vaultAuth.yaml"
+        }
+    },
+    "stat": {
+        "atime": 1610016748.9287314,
+        "attr_flags": "",
+        "attributes": [],
+        "block_size": 4096,
+        "blocks": 1,
+        "charset": "unknown",
+        "checksum": "a9cee00aea4752ff91659435c6ac72d497f324a0",
+        "ctime": 1610012947.8590684,
+        "dev": 35,
+        "device_type": 0,
+        "executable": true,
+        "exists": true,
+        "gid": 50,
+        "gr_name": "staff",
+        "inode": 2961,
+        "isblk": false,
+        "ischr": false,
+        "isdir": false,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": true,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "unknown",
+        "mode": "0777",
+        "mtime": 1610012947.5131316,
+        "nlink": 1,
+        "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns/vaultAuth.yaml",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 93,
+        "uid": 1000,
+        "version": null,
+        "wgrp": true,
+        "woth": true,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": true,
+        "xoth": true,
+        "xusr": true
+    }
+}
+
+TASK [Ensures /home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns dir exists] ***
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:16
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [create/k8_component : create vaultAuth file for manufacturer-ns] *********
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:26
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Helm lint] ***************************************************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:38
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Create vault reviewer for manufacturer] **********************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/namespace_serviceaccount/tasks/main.yaml:38
+
+TASK [create/k8_component : stat] **********************************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:11
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1610032616.4081266-5146-213678713619415 `" && echo ansible-tmp-1610032616.4081266-5146-213678713619415="` echo /root/.ansible/tmp/ansible-tmp-1610032616.4081266-5146-213678713619415 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.5/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-3312pfbd6eab/tmpsukx60cv TO /root/.ansible/tmp/ansible-tmp-1610032616.4081266-5146-213678713619415/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610032616.4081266-5146-213678713619415/ /root/.ansible/tmp/ansible-tmp-1610032616.4081266-5146-213678713619415/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610032616.4081266-5146-213678713619415/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1610032616.4081266-5146-213678713619415/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns/vault-reviewer.yaml"
+        }
+    },
+    "stat": {
+        "atime": 1610016748.9335523,
+        "attr_flags": "",
+        "attributes": [],
+        "block_size": 4096,
+        "blocks": 1,
+        "charset": "unknown",
+        "checksum": "d42acd499847c49c4dc3d13a2a113b3130c4d334",
+        "ctime": 1610012950.3176513,
+        "dev": 35,
+        "device_type": 0,
+        "executable": true,
+        "exists": true,
+        "gid": 50,
+        "gr_name": "staff",
+        "inode": 2962,
+        "isblk": false,
+        "ischr": false,
+        "isdir": false,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": true,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "unknown",
+        "mode": "0777",
+        "mtime": 1610012949.9831555,
+        "nlink": 1,
+        "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns/vault-reviewer.yaml",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 97,
+        "uid": 1000,
+        "version": null,
+        "wgrp": true,
+        "woth": true,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": true,
+        "xoth": true,
+        "xusr": true
+    }
+}
+
+TASK [Ensures /home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns dir exists] ***
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:16
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [create/k8_component : create vault-reviewer file for manufacturer-ns] ****
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:26
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Helm lint] ***************************************************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:38
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Create clusterrolebinding for manufacturer] ******************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/namespace_serviceaccount/tasks/main.yaml:48
+
+TASK [create/k8_component : stat] **********************************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:11
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1610032617.8152652-5181-65545231349357 `" && echo ansible-tmp-1610032617.8152652-5181-65545231349357="` echo /root/.ansible/tmp/ansible-tmp-1610032617.8152652-5181-65545231349357 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.5/dist-packages/ansible/modules/stat.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-3312pfbd6eab/tmpzpgm18gd TO /root/.ansible/tmp/ansible-tmp-1610032617.8152652-5181-65545231349357/AnsiballZ_stat.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610032617.8152652-5181-65545231349357/ /root/.ansible/tmp/ansible-tmp-1610032617.8152652-5181-65545231349357/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610032617.8152652-5181-65545231349357/AnsiballZ_stat.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1610032617.8152652-5181-65545231349357/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": false,
+            "get_mime": true,
+            "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns/reviewer_rbac.yaml"
+        }
+    },
+    "stat": {
+        "atime": 1610016748.937457,
+        "attr_flags": "",
+        "attributes": [],
+        "block_size": 4096,
+        "blocks": 1,
+        "charset": "unknown",
+        "checksum": "6130cc19ffb8a138f1da8edf8ad15a4e08d18aba",
+        "ctime": 1610012952.9167833,
+        "dev": 35,
+        "device_type": 0,
+        "executable": true,
+        "exists": true,
+        "gid": 50,
+        "gr_name": "staff",
+        "inode": 2963,
+        "isblk": false,
+        "ischr": false,
+        "isdir": false,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": true,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "unknown",
+        "mode": "0777",
+        "mtime": 1610012952.5681806,
+        "nlink": 1,
+        "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns/reviewer_rbac.yaml",
+        "readable": true,
+        "rgrp": true,
+        "roth": true,
+        "rusr": true,
+        "size": 332,
+        "uid": 1000,
+        "version": null,
+        "wgrp": true,
+        "woth": true,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": true,
+        "xoth": true,
+        "xusr": true
+    }
+}
+
+TASK [Ensures /home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../platforms/r3-corda/releases/dev/manufacturer-ns dir exists] ***
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:16
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [create/k8_component : create reviewer_rbac file for manufacturer-ns] *****
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:26
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Helm lint] ***************************************************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/k8_component/tasks/main.yaml:38
+skipping: [localhost] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [Push the created deployment files to repository] *************************
+task path: /home/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/namespace_serviceaccount/tasks/main.yaml:57
+
+TASK [/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../shared/configuration/roles/git_push : Check if directory: /home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../ exists] ***
+task path: /home/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:3
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1610032619.1948195-5216-120360182730660 `" && echo ansible-tmp-1610032619.1948195-5216-120360182730660="` echo /root/.ansible/tmp/ansible-tmp-1610032619.1948195-5216-120360182730660 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.5/dist-packages/ansible/modules/file.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-3312pfbd6eab/tmpxxs_2tvu TO /root/.ansible/tmp/ansible-tmp-1610032619.1948195-5216-120360182730660/AnsiballZ_file.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610032619.1948195-5216-120360182730660/ /root/.ansible/tmp/ansible-tmp-1610032619.1948195-5216-120360182730660/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610032619.1948195-5216-120360182730660/AnsiballZ_file.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1610032619.1948195-5216-120360182730660/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost] => {
+    "changed": false,
+    "diff": {
+        "after": {
+            "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../"
+        },
+        "before": {
+            "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../"
+        }
+    },
+    "gid": 50,
+    "group": "staff",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../",
+            "recurse": false,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": false
+        }
+    },
+    "mode": "0777",
+    "owner": "1000",
+    "path": "/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../../",
+    "size": 4096,
+    "state": "directory",
+    "uid": 1000
+}
+
+TASK [/home/blockchain-automation-framework/platforms/r3-corda/configuration/../../shared/configuration/roles/git_push : Execute git push via shell task] ***
+task path: /home/blockchain-automation-framework/platforms/shared/configuration/roles/git_push/tasks/main.yaml:9
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1610032619.9212506-5242-237219399398304 `" && echo ansible-tmp-1610032619.9212506-5242-237219399398304="` echo /root/.ansible/tmp/ansible-tmp-1610032619.9212506-5242-237219399398304 `" ) && sleep 0'
+Using module file /usr/local/lib/python3.5/dist-packages/ansible/modules/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-3312pfbd6eab/tmpzxf1xiu6 TO /root/.ansible/tmp/ansible-tmp-1610032619.9212506-5242-237219399398304/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610032619.9212506-5242-237219399398304/ /root/.ansible/tmp/ansible-tmp-1610032619.9212506-5242-237219399398304/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610032619.9212506-5242-237219399398304/AnsiballZ_command.py && sleep 0'
