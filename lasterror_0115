@@ -1,0 +1,104 @@
+TASK [create/certificates/notary : Check if truststore already created] ***********************************************************************************************************************************
+task path: /home/user/workspace/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/certificates/notary/tasks/main.yaml:15
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1610727305.778037-222864351008346 `" && echo ansible-tmp-1610727305.778037-222864351008346="` echo /root/.ansible/tmp/ansible-tmp-1610727305.778037-222864351008346 `" ) && sleep 0'
+Using module file /usr/lib/python3/dist-packages/ansible/modules/commands/command.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-6982897071ajyf/tmpzihtlcyv TO /root/.ansible/tmp/ansible-tmp-1610727305.778037-222864351008346/AnsiballZ_command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610727305.778037-222864351008346/ /root/.ansible/tmp/ansible-tmp-1610727305.778037-222864351008346/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'VAULT_ADDR=http://10.1.188.230:8200 VAULT_TOKEN=s.Qt0VgSFkvSWRUwWPWF1mQ82E /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610727305.778037-222864351008346/AnsiballZ_command.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1610727305.778037-222864351008346/ > /dev/null 2>&1 && sleep 0'
+fatal: [localhost]: FAILED! => {
+    "changed": true,
+    "cmd": "vault kv get -field=network-map-truststore notary/certs/networkmaptruststore\n",
+    "delta": "0:00:00.042541",
+    "end": "2021-01-16 00:15:06.018668",
+    "invocation": {
+        "module_args": {
+            "_raw_params": "vault kv get -field=network-map-truststore notary/certs/networkmaptruststore\n",
+            "_uses_shell": true,
+            "argv": null,
+            "chdir": null,
+            "creates": null,
+            "executable": null,
+            "removes": null,
+            "stdin": null,
+            "stdin_add_newline": true,
+            "strip_empty_ends": true,
+            "warn": true
+        }
+    },
+    "msg": "non-zero return code",
+    "rc": 2,
+    "start": "2021-01-16 00:15:05.976127",
+    "stderr": "Error making API request.\n\nURL: GET http://10.1.188.230:8200/v1/sys/internal/ui/mounts/notary/certs/networkmaptruststore\nCode: 403. Errors:\n\n* preflight capability check returned 403, please ensure client's policies grant access to path \"notary/certs/networkmaptruststore/\"",
+    "stderr_lines": [
+        "Error making API request.",
+        "",
+        "URL: GET http://10.1.188.230:8200/v1/sys/internal/ui/mounts/notary/certs/networkmaptruststore",
+        "Code: 403. Errors:",
+        "",
+        "* preflight capability check returned 403, please ensure client's policies grant access to path \"notary/certs/networkmaptruststore/\""
+    ],
+    "stdout": "",
+    "stdout_lines": []
+}
+...ignoring
+
+TASK [create/certificates/notary : Downloads certs from nms] **********************************************************************************************************************************************
+task path: /home/user/workspace/blockchain-automation-framework/platforms/r3-corda/configuration/roles/create/certificates/notary/tasks/main.yaml:26
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: root
+<localhost> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1610727306.1085896-218312551041830 `" && echo ansible-tmp-1610727306.1085896-218312551041830="` echo /root/.ansible/tmp/ansible-tmp-1610727306.1085896-218312551041830 `" ) && sleep 0'
+Using module file /usr/lib/python3/dist-packages/ansible/modules/net_tools/basics/get_url.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-6982897071ajyf/tmp3p8nlddy TO /root/.ansible/tmp/ansible-tmp-1610727306.1085896-218312551041830/AnsiballZ_get_url.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1610727306.1085896-218312551041830/ /root/.ansible/tmp/ansible-tmp-1610727306.1085896-218312551041830/AnsiballZ_get_url.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1610727306.1085896-218312551041830/AnsiballZ_get_url.py && sleep 0'
+<localhost> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1610727306.1085896-218312551041830/ > /dev/null 2>&1 && sleep 0'
+fatal: [localhost]: FAILED! => {
+    "changed": false,
+    "dest": "/home/user/workspace/blockchain-automation-framework/platforms/r3-corda/configuration/build/corda/notary/network-map-truststore.jks",
+    "elapsed": 0,
+    "invocation": {
+        "module_args": {
+            "attributes": null,
+            "backup": null,
+            "checksum": "",
+            "client_cert": null,
+            "client_key": null,
+            "content": null,
+            "delimiter": null,
+            "dest": "/home/user/workspace/blockchain-automation-framework/platforms/r3-corda/configuration/build/corda/notary/network-map-truststore.jks",
+            "directory_mode": null,
+            "follow": false,
+            "force": false,
+            "force_basic_auth": false,
+            "group": null,
+            "headers": null,
+            "http_agent": "ansible-httpget",
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "sha256sum": "",
+            "src": null,
+            "timeout": 10,
+            "tmp_dest": null,
+            "unsafe_writes": null,
+            "url": "http://10.0.2.15:30040/network-map/truststore",
+            "url_password": null,
+            "url_username": null,
+            "use_proxy": true,
+            "validate_certs": false
+        }
+    },
+    "msg": "Request failed: <urlopen error [Errno 111] Connection refused>",
+    "url": "http://10.0.2.15:30040/network-map/truststore"
+}
+
+PLAY RECAP ************************************************************************************************************************************************************************************************
+localhost                  : ok=189  changed=54   unreachable=0    failed=1    skipped=364  rescued=0    ignored=2 
